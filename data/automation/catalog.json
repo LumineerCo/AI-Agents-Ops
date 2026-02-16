@@ -1,0 +1,30 @@
+{
+  "business": "LumineerCo Service Provider",
+  "capabilities": [
+    {
+      "name": "Blog Writing Automation",
+      "description": "Generates SEO blog drafts from niche keywords and weekly content themes.",
+      "output": ["markdown post draft", "meta title", "meta description", "internal link ideas"]
+    },
+    {
+      "name": "Image/Post Generation",
+      "description": "Creates social post copy and prompt packs for image model rendering.",
+      "output": ["15 social captions", "image prompts", "CTA variants"]
+    },
+    {
+      "name": "SaaS Landing Page Templates",
+      "description": "Builds reusable landing page copy blocks and pricing sections per niche.",
+      "output": ["hero options", "feature grids", "FAQ blocks", "offer stack"]
+    },
+    {
+      "name": "Sales & Marketing Flows",
+      "description": "Prepares outreach messages, drip sequences, and coupon campaign copy.",
+      "output": ["cold email sequence", "follow-up variants", "offer deadlines"]
+    },
+    {
+      "name": "Finance & KPI Reports",
+      "description": "Produces weekly executive snapshots and monthly deep-dive report inputs.",
+      "output": ["weekly CSV", "top-product summary", "reinvestment recommendation"]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "c-1001",
+    "name": "Demo Client",
+    "email": "client@example.com",
+    "service": "MVP Automation Kit",
+    "status": "onboarding"
+  },
+  {
+    "id": "c-1771228777602",
+    "name": "Acme",
+    "email": "ops@acme.com",
+    "service": "Automation Retainer",
+    "status": "new"
+  }
+]

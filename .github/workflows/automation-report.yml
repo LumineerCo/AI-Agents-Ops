@@ -1,0 +1,25 @@
+name: Automation Reporting
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+jobs:
+  automation-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate automated content and finance artifacts
+        run: python3 scripts/generate_assets.py
+
+      - name: Upload generated artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-automation-artifacts
+          path: |
+            data/finance/weekly_report.csv
+            content/generated/weekly-blog-draft.md
+            content/generated/social-posts.csv

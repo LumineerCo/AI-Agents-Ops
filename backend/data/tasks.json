@@ -1,0 +1,14 @@
+[
+  {
+    "id": "t-2001",
+    "title": "Generate weekly SEO blog draft",
+    "agent": "Content Agent",
+    "status": "queued"
+  },
+  {
+    "id": "t-2002",
+    "title": "Create 15 social captions",
+    "agent": "Marketing Agent",
+    "status": "running"
+  }
+]

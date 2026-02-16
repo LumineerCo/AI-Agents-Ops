@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Automation | LumineerCo</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand">LumineerCo Service Provider</a>
+        <nav>
+          <a href="products.html">Products</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page container">
+      <h1>Automated Blog & Social Publishing</h1>
+      <p>
+        The content pipeline can produce weekly draft posts and social snippets using
+        `scripts/generate_assets.py` and upload them as workflow artifacts.
+      </p>
+
+      <div class="card">
+        <h2>Generated assets</h2>
+        <ul>
+          <li><code>content/generated/weekly-blog-draft.md</code></li>
+          <li><code>content/generated/social-posts.csv</code></li>
+          <li><code>data/finance/weekly_report.csv</code></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Execution frequency</h2>
+        <p>
+          Scheduled via GitHub Actions every Monday 09:00 UTC, with manual trigger support.
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-links">
+        <p>© <span id="year"></span> LumineerCo</p>
+        <div><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+      </div>
+    </footer>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

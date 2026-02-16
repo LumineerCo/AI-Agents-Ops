@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LumineerCo Operations Dashboard</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="../index.html" class="brand">LumineerCo Dashboard</a>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="../products.html">Services</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page container">
+      <h1>24/7 Company Operations Center</h1>
+      <p class="notice">Default backend URL is <code>http://localhost:8787</code>. Update in dashboard if deployed elsewhere.</p>
+
+      <div class="card">
+        <label>Backend API URL
+          <input id="apiBase" value="http://localhost:8787" />
+        </label>
+        <button class="btn btn-primary" id="refreshBtn" type="button">Refresh Overview</button>
+        <button class="btn btn-outline" id="runCycleBtn" type="button">Run Automation Cycle</button>
+      </div>
+
+      <section class="grid-3">
+        <article class="card"><h2>Clients</h2><p id="clientsTotal">-</p></article>
+        <article class="card"><h2>Tasks</h2><p id="tasksTotal">-</p></article>
+        <article class="card"><h2>Running Tasks</h2><p id="runningTasks">-</p></article>
+      </section>
+
+      <section class="split">
+        <div class="card">
+          <h2>Add New Client</h2>
+          <label>Name<input id="clientName" /></label>
+          <label>Email<input id="clientEmail" /></label>
+          <label>Service<input id="clientService" placeholder="SaaS Landing Page Pack" /></label>
+          <button class="btn btn-primary" id="addClientBtn" type="button">Create Client</button>
+        </div>
+
+        <div class="card">
+          <h2>Add New Task</h2>
+          <label>Task Title<input id="taskTitle" placeholder="Generate product image prompts" /></label>
+          <label>Agent<input id="taskAgent" placeholder="Marketing Agent" /></label>
+          <button class="btn btn-primary" id="addTaskBtn" type="button">Queue Task</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Latest Automation Report</h2>
+        <pre id="reportOutput">No report loaded yet.</pre>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-links">
+        <p>© <span id="year"></span> LumineerCo Service Provider</p>
+      </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
